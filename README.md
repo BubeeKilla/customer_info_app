@@ -67,6 +67,6 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
   rails server
   ```
 
+## License
 
-
-
+  - This project is licensed under the MIT License - see the LICENSE file for details.
