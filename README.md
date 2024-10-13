@@ -27,7 +27,7 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
 1. Clone the repository:
 
   ```bash
-  git clone https://github.com/yourusername/customer_info_app.git
+  git clone https://github.com/BubeeKilla/customer_info_app.git
   cd customer_info_app
   ```
 2. Install dependencies:
