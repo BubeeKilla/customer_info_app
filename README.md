@@ -11,17 +11,9 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
 - Ruby on Rails
 - PostgreSQL
 - AWS RDS
-- Docker (for pgAdmin)
+- Docker (for pgAdmin as connection tool to the RDS table, my case customer_info_app_development, check database name for development below)
 
 ## Getting Started
-
-### Prerequisites
-- Ruby
-- Rails
-- PostgreSQL
-- Bundler
-- Docker (for pgAdmin as connection tool to the RDS table, my case customer_info_app_development, check database name for development below)
-- AWS Account (for RDS)
 
 ### Installation
 1. Clone the repository:
