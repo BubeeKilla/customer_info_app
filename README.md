@@ -5,8 +5,6 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Database Configuration](#database-configuration)
-- [Running the Application](#running-the-application)
 - [License](#license)
 
 ## Technologies Used
@@ -31,13 +29,13 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
   ```bash
   git clone https://github.com/yourusername/customer_info_app.git
   cd customer_info_app
-
+  ```
 2. Install dependencies:
-
+  ```bash
   bundle install
-
+  ```
 3. Configure your database in database.yml file:
-
+  ```yml
   default: &default
   adapter: postgresql
   encoding: unicode
@@ -58,16 +56,16 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
   production:
     <<: *default
     database: customer_info_app_production
-
+  ```
 4. Create and migrate the database: 
-   
+  ```bash     
   rails db:create
   rails db:migrate
-
+  ```
 5. Start the Rails server:  
-
+  ```bash
   rails server
-
+  ```
 
 
 
