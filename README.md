@@ -4,6 +4,7 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
 - [Database Configuration](#database-configuration)
 - [Running the Application](#running-the-application)
 - [License](#license)
