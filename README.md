@@ -17,7 +17,6 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
 
 ### Installation
 1. Clone the repository:
-
   ```bash
   git clone https://github.com/BubeeKilla/customer_info_app.git
   cd customer_info_app
@@ -59,6 +58,12 @@ A Ruby on Rails application for managing customer information using PostgreSQL o
   rails server
   ```
 
+### Usage
+
+- Visit the homepage.
+- Fill the spaces with the info like Name..etc.
+- Submit
+  
 ## License
 
   - This project is licensed under the MIT License - see the LICENSE file for details.
