@@ -1,0 +1,53 @@
+<h1>Customers</h1>
+
+<table>
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.last_name %></td>
+        <td><%= customer.first_name %></td>
+        <td><%= customer.birth_date %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.address %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Add New Customer</h2>
+<%= form_with(model: @customer, local: true) do |form| %>
+  <% if @customer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@customer.errors.count, "error") %> prohibited this customer from being saved:</h2>
+      <ul>
+        <% @customer.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+  <div>
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+  <div>
+    <%= form.label :birth_date %>
+    <%= form.date_select :birth_date %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div>
+    <%= form.label :address %>
+    <%= form.text_area :address %>
+  </div>
+  <div>
+    <%= form.submit 'Add Customer' %>
+  </div>
+<% end %>
